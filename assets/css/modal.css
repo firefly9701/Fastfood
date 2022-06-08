@@ -1,0 +1,145 @@
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.modal.modal-register {
+    display: none;
+}
+
+.modal-close {
+    position: absolute;
+    right: 0;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.modal-close:hover {
+    background-color: #EE3124;
+    color: #fff;
+    border-top-right-radius: 5px;
+}
+.modal-main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-container {
+    position: relative;
+    justify-content:center;
+    background-color:#fff;
+    width: 400px;
+    border-radius: 5px;
+    /* min-height: 300px; */
+
+}
+.form-account-heading {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.form-account-body {
+    margin: 15px 15px;
+}
+
+.form-account-fillin {
+    margin-bottom: 10px;
+}
+.form-account-input {
+    padding-top: 20px;
+    border-top: 1px solid rgb(238, 232, 232);
+    border-bottom: 1px solid rgb(238, 232, 232);
+}
+.form-input {
+    display: block;
+    width: 358px;
+    height: 30px;
+    margin: 5px 0 20px;
+    padding-left: 10px;
+    border: 1px solid #EE3124;
+    outline: none;
+    background-color: rgba(245, 231, 231, 0.37);
+}
+.form-group #username {
+    position: relative;
+}
+.modal-login .form-input-suggest,
+.modal-register .form-input-suggest {
+    width: 93%;
+    top: 34%;
+    list-style: none;
+    position: absolute;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    display: none;
+    padding: 0;
+}
+.form-input-suggest li {
+    padding: 5px 10px;
+
+}
+.form-input-suggest li:hover {
+    background-color: #ccc;
+}
+#username-login:focus ~ .form-input-suggest,
+#username-register:focus ~ .form-input-suggest {
+    display: block;
+}
+.form-account-label {
+    font-weight: 600;
+}
+.form-account-service {
+    margin: 20px 6px 16px 0;
+    font-size: 14px;
+}
+
+.form-account-link {
+    color: #EE3124;
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.form-account-btn {
+    width: 100%;
+    padding: 8px 0;
+    color: #fff;
+    border: none;
+    background-color: #EE3124;
+}
+.form-account-btn:hover {
+    cursor: pointer;
+    background-color: #c71c0f;
+}
+.form-account-ask {
+    text-align: center;
+    padding: 20px 0 30px;
+}
+/* modal login */
+.modal.modal-login {
+    display: none;
+
+}
+.form-account-check {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.form-account-forgot {
+    color:#EE3124;
+}
+.modal-login .form-input-suggest {
+    width: 92%;
+    top: 41%;
+    list-style: none;
+    position: absolute;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    display: none;
+}
